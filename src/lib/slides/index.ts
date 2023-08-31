@@ -1,5 +1,6 @@
 import About from './about.svelte'
 import Animation from './animation.svelte'
+import SqlInjectionExample from './sql-injection-example.svelte'
 import FileWrap from './FileWrap.svelte'
 import OneSlot from './one-slot.svelte'
 import Quote from './quote.svelte'
@@ -16,4 +17,5 @@ export {
     Selfie,
     Thanks,
     Title,
+    SqlInjectionExample,
 }
