@@ -4,12 +4,6 @@
 
 <Slide animate>
 	<div class="text-left space-y-6">
-		<h1 class="text-[4rem]">PHP Example: SQL Injection</h1>
-	</div>
-</Slide>
-
-<Slide animate>
-	<div class="text-left space-y-6">
 		<h1 class="text-[2rem]">PHP Example: SQL Injection (Malicious ❌)</h1>
 		<div class="w-[1020px]">
 			<Code lang="php" lines="3|1|5">
@@ -40,6 +34,48 @@
 				$statement->execute(); // MySQLi: bind parameter
 
 				$statement->execute([$id]); // PDO: bind parameter & execute query
+
+				// Output: SELECT * FROM users where id="1; DROP TABLE users";
+        	`}
+			</Code>
+		</div>
+	</div>
+</Slide>
+
+<Slide animate>
+	<div class="text-left space-y-6">
+		<h1 class="text-[2rem]">Laravel Example: SQL Injection (Malicious ❌)</h1>
+		<div class="w-[1020px]">
+			<Code lang="php" lines="3|7|9">
+				{`
+            $id = "1; DROP TABLE users;";
+
+            DB::table('users')->select()->whereRaw("id = $id");
+
+            // OR
+
+            DB::statement("SELECT * FROM users  WHERE id = $id");
+
+           // Output: SELECT * FROM users where id=1; DROP TABLE users;
+        	`}
+			</Code>
+		</div>
+	</div>
+</Slide>
+
+<Slide animate>
+	<div class="text-left space-y-6">
+		<h1 class="text-[2rem]">PHP Example: SQL Injection (Secured ✅)</h1>
+		<div class="w-[1020px]">
+			<Code lang="php" lines="3|7|9">
+				{`
+				$id = "1; DROP TABLE users;";
+
+				DB::table('users')->select()->whereRaw("id = ?", $id);
+
+				// OR
+
+				DB::statement("SELECT * FROM users  WHERE id = ?", [$id]);
 
 				// Output: SELECT * FROM users where id="1; DROP TABLE users";
         	`}

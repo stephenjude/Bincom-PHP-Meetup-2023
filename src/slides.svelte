@@ -1,6 +1,6 @@
 <script lang="ts">
-    import {Code, Presentation} from '@components'
-    import {About, Animation, OneSlot, Quote, SqlInjectionExample, Thanks, Title,} from '@lib/slides'
+    import {Code, Presentation, Slide} from '@components'
+    import {About, OneSlot, Quote, SqlInjectionExample, CrossSiteScriptingExample, CrossSiteRequestForgryExample, Thanks, Title,} from '@lib/slides'
 
     let title: string = 'Securing Web Applications'
     let subtitle: string = 'PHP & Laravel Applications'
@@ -88,15 +88,56 @@
 
     <SqlInjectionExample/>
 
-    <OneSlot title="PHP Example">
-        <Code lang="php">
-            {`
-
-			`}
-        </Code>
+    <OneSlot
+            title="What is Cross-Site Scripting (XSS) 👺 ?">
+        <h2 class="leading-normal">
+            Cross-site Scripting is a security vulnerability empowers attackers
+            <span class="uppercase text-red-400 font-bold">inject and execute malicious code</span> into a web application to control and steal user's information.
+        </h2>
     </OneSlot>
 
-    <Animation/>
+    <OneSlot
+            title="Prevent Cross-Site Scripting (XSS) 👺">
+        <li class="leading-normal">
+            Always
+            <span class="uppercase text-green-400 font-bold">Sanitze</span> input and output data.
+        </li>
+        <li class="leading-normal">
+            Use <span class="uppercase text-green-400 font-bold"> Anti-XSS</span>
+            libraries, template engines & frameworks.
+        </li>
+    </OneSlot>
+
+    <CrossSiteScriptingExample/>
+
+    <OneSlot
+            title="Cross-Site Request Forgery (CSRF) 🤡 ?">
+        <h2 class="leading-normal">
+            Cross-site request forgery is a security vulnerability empowers attackers to
+            <span class="uppercase text-red-400 font-bold">perform unauthorised commands</span> on behalf of an authenticated web application user.
+        </h2>
+    </OneSlot>
+
+    <OneSlot
+            title="Prevent Cross-Site Request Forgery (CSRF) 🤡">
+        <li class="leading-normal">
+            Use
+            <span class="uppercase text-green-400 font-bold">authentication (CSRF)</span> token.
+        </li>
+        <li class="leading-normal">
+            Use <span class="uppercase text-green-400 font-bold">CSRF</span>
+            libraries, template engines & frameworks.
+        </li>
+    </OneSlot>
+
+    <CrossSiteRequestForgryExample/>
+
+
+    <Slide animate>
+        <div class="text-left space-y-6">
+            <h1 class="text-[4rem]">Advance Security Techniques</h1>
+        </div>
+    </Slide>
 
     <Thanks/>
 </Presentation>

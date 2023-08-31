@@ -1,6 +1,7 @@
 import About from './about.svelte'
-import Animation from './animation.svelte'
 import SqlInjectionExample from './sql-injection-example.svelte'
+import CrossSiteScriptingExample from './cross-site-scripting-example.svelte'
+import CrossSiteRequestForgryExample from './cross-site-request-forgery-example.svelte'
 import FileWrap from './FileWrap.svelte'
 import OneSlot from './one-slot.svelte'
 import Quote from './quote.svelte'
@@ -10,7 +11,6 @@ import Title from './title.svelte'
 
 export {
     About,
-    Animation,
     FileWrap,
     OneSlot,
     Quote,
@@ -18,4 +18,6 @@ export {
     Thanks,
     Title,
     SqlInjectionExample,
+    CrossSiteScriptingExample,
+    CrossSiteRequestForgryExample,
 }
