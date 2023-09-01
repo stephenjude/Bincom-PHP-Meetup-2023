@@ -8,7 +8,7 @@
 		<div class="w-[1020px]">
 			<Code lang="php" lines="3|1|5">
 				{`
-$input = "<script>alert('Hack');</script>";
+$input = $_GET('fullname'); //"<script>alert('Hack');</script>";
 
 echo "Hello $input, you are welcome";
 
@@ -26,7 +26,7 @@ echo "Hello $input, you are welcome";
 		<div class="w-[1020px]">
 			<Code lang="php" lines="3|7">
 				{`
-$input = "<script>alert('Hack');</script>";
+$input = $_GET('fullname'); //"<script>alert('Hack');</script>";
 
 $sanitizedInput = htmlspecialchars($input);
 
@@ -45,7 +45,7 @@ echo "Hello $sanitizedInput, you are welcome";
 		<div class="w-[1020px]">
 			<Code lang="php" lines="3|1|5">
 				{`
-@php($input = "<script>alert('Hack');</script>");
+@php($input = $_GET('fullanme')); // "<script>alert('Hack');</script>";
 
 {!! $input !!}
 
