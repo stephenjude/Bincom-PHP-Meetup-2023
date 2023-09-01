@@ -6,7 +6,6 @@
         CrossSiteRequestForgryExample,
         CrossSiteScriptingExample,
         OneSlot,
-        Quote,
         SqlInjectionExample,
         Thanks,
         Title,
@@ -48,12 +47,11 @@
             item3="Accounts for 68% of malicious exploits 🥵">
     </WhySecurity>
 
-    <Quote
-            avatar=""
-            author="Martina Navratilova"
-            company="Former Wimbledon Champion"
-            quote="Security used to be an inconvenience sometimes, but now it’s a necessity all the time.">
-    </Quote>
+    <Slide animate>
+        <div class="w-full flex items-center justify-center">
+            <img class="object-scale-down h-96 rounded-sm" src="img/with_great_power_comes_great_responsibility.jpg">
+        </div>
+    </Slide>
 
     <Agenda
             title="Agenda"
@@ -107,7 +105,7 @@
             <span class="uppercase text-green-400 font-bold">Sanitze</span> input and output data.
         </li>
         <li class="leading-normal">
-            Use <span class="uppercase text-green-400 font-bold"> Anti-XSS</span>
+            Use <span class="uppercase text-green-400 font-bold"> Anti-XSS</span> supported
             libraries, template engines & frameworks.
         </li>
     </OneSlot>
@@ -119,7 +117,7 @@
         <h2 class="leading-normal">
             Cross-site request forgery is a security vulnerability empowers attackers to
             <span class="uppercase text-red-400 font-bold">perform unauthorised commands</span> on behalf of an
-            authenticated web application user.
+            authenticated user.
         </h2>
     </OneSlot>
 
@@ -130,7 +128,7 @@
             <span class="uppercase text-green-400 font-bold">authentication (CSRF)</span> token.
         </li>
         <li class="leading-normal">
-            Use <span class="uppercase text-green-400 font-bold">CSRF</span>
+            Use <span class="uppercase text-green-400 font-bold">CSRF</span> supported
             libraries, template engines & frameworks.
         </li>
     </OneSlot>
@@ -139,9 +137,78 @@
 
     <Slide animate>
         <div class="text-left space-y-6">
-            <h1 class="text-[4rem]">Advance Security Techniques</h1>
+            <h1 class="text-[4rem]">Security Recomendations 🔥</h1>
+        </div>
+    </Slide>
+
+    <Slide animate>
+        <div class="text-left space-y-6">
+            <h1 class="text-[2rem]">Security Recomendations 🔥</h1>
+            <li>Stack & infrastructure</li>
+        </div>
+    </Slide>
+
+    <Slide animate>
+        <div class="text-left space-y-6">
+            <h1 class="text-[2rem]">Security Recomendations 🔥</h1>
+            <li>Stack & infrastructure ✅</li>
+        </div>
+    </Slide>
+
+    <Slide animate>
+        <div class="text-left space-y-6">
+            <h1 class="text-[2rem]">Security Recomendations 🔥</h1>
+            <li>Stacks & infrastructure ✅</li>
+            <li>HTTP security headers</li>
+        </div>
+    </Slide>
+
+    <Slide animate>
+        <div class="text-left space-y-6">
+            <h1 class="text-[2rem]">Security Recomendations 🔥</h1>
+            <li>Stacks & infrastructure ✅</li>
+            <li>HTTP security headers ✅</li>
+        </div>
+    </Slide>
+
+    <Slide animate>
+        <div class="text-left space-y-6">
+            <h1 class="text-[2rem]">Security Recomendations 🔥</h1>
+            <li>Stacks & infrastructure ✅</li>
+            <li>HTTP security headers ✅</li>
+            <li>Validate your webhooks </li>
+        </div>
+    </Slide>
+
+    <Slide animate>
+        <div class="text-left space-y-6">
+            <h1 class="text-[2rem]">Security Recomendations 🔥</h1>
+            <li>Stacks & infrastructure ✅</li>
+            <li>HTTP security headers ✅</li>
+            <li>Validate your webhooks ✅ </li>
+        </div>
+    </Slide>
+
+    <Slide animate>
+        <div class="text-left space-y-6">
+            <h1 class="text-[2rem]">Security Recomendations 🔥</h1>
+            <li>Stacks & infrastructure ✅</li>
+            <li>HTTP security headers ✅</li>
+            <li>Validate your webhooks ✅</li>
+            <li>Error tracking & monitoring</li>
+        </div>
+    </Slide>
+
+    <Slide animate>
+        <div class="text-left space-y-6">
+            <h1 class="text-[2rem]">Security Recomendations 🔥</h1>
+            <li>Stacks & infrastructure ✅</li>
+            <li>HTTP security headers ✅</li>
+            <li>Validate your webhooks ✅</li>
+            <li>Error tracking & monitoring ✅</li>
         </div>
     </Slide>
 
     <Thanks/>
+
 </Presentation>

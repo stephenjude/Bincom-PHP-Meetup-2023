@@ -23,7 +23,7 @@
 	<div class="text-left space-y-6">
 		<h1 class="text-[2rem]">PHP Example: SQL Injection (Secured ✅)</h1>
 		<div class="w-[1020px]">
-			<Code lang="php" lines="3|1|5-7|9|11">
+			<Code lang="php" lines="3|5-7|9|11">
 				{`
 				$id = "1; DROP TABLE users;";
 
