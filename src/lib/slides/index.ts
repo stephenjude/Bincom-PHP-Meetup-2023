@@ -8,6 +8,8 @@ import Quote from './quote.svelte'
 import Selfie from './selfie.svelte'
 import Thanks from './thanks.svelte'
 import Title from './title.svelte'
+import WhySecurity from './why-security.svelte'
+import Agenda from './agenda.svelte'
 
 export {
     About,
@@ -17,6 +19,8 @@ export {
     Selfie,
     Thanks,
     Title,
+    Agenda,
+    WhySecurity,
     SqlInjectionExample,
     CrossSiteScriptingExample,
     CrossSiteRequestForgryExample,

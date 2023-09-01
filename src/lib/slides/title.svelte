@@ -8,20 +8,20 @@
 </script>
 
 <Slide animate>
-    <div class="flex flex-col items-start justify-center">
+    <div class="flex flex-col items-start justify-center leading-normal">
         <h1 class="text-[4rem]">{title}</h1>
     </div>
 </Slide>
 
 <Slide animate>
-    <div class="flex flex-col items-start justify-center">
+    <div class="flex flex-col items-start justify-center leading-normal">
         <h1 class="text-[2rem]">{title}</h1>
         <h3 class="text-[4rem]">{subtitle}</h3>
     </div>
 </Slide>
 
 <Slide animate>
-    <div class="flex flex-col items-start justify-center">
+    <div class="flex flex-col items-start justify-center leading-normal">
         <h1 class="text-[2rem]">{title}</h1>
         <h3 class="text-[4rem]">{subtitle}</h3>
 
@@ -32,7 +32,7 @@
 </Slide>
 
 <Slide animate>
-    <div class="flex flex-col items-start justify-center">
+    <div class="flex flex-col items-start justify-center leading-normal">
         <h1 class="text-[2rem]">{title}</h1>
         <h3 class="text-[4rem]">{subtitle}</h3>
 

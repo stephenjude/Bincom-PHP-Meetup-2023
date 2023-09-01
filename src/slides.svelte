@@ -1,11 +1,22 @@
 <script lang="ts">
-    import {Code, Presentation, Slide} from '@components'
-    import {About, OneSlot, Quote, SqlInjectionExample, CrossSiteScriptingExample, CrossSiteRequestForgryExample, Thanks, Title,} from '@lib/slides'
+    import {Presentation, Slide} from '@components'
+    import {
+        About,
+        Agenda,
+        CrossSiteRequestForgryExample,
+        CrossSiteScriptingExample,
+        OneSlot,
+        Quote,
+        SqlInjectionExample,
+        Thanks,
+        Title,
+        WhySecurity,
+    } from '@lib/slides'
 
-    let title: string = 'Securing Web Applications'
+    let title: string = 'Stratagies For Securing Web Applications'
     let subtitle: string = 'PHP & Laravel Applications'
     let author: string = 'Stephen Jude'
-    let event: string = 'Bincom PHP Meetup'
+    let event: string = '— Bincom PHP Meetup'
     let role: string = 'CTO'
     let company: string = 'Pay4Me App'
     let github: string = 'stephenjude'
@@ -18,7 +29,7 @@
             title={title}
             subtitle={subtitle}
             author={author}
-            event={event}
+            event="{event}"
     />
 
     <About
@@ -30,36 +41,28 @@
             avatar={avatar}
     />
 
-    <OneSlot
-            title="PHP Usage Statistics ">
-        <ul class="list-disc p-4">
-            <li class="leading-loose">Powers over 80% of the web. 😇</li>
-        </ul>
-    </OneSlot>
-    <OneSlot
-            title="Malicious Traffic Statistics (2018)">
-        <ul class="list-disc p-4">
-            <li class="leading-normal">
-                PHP was identified as the target of 81% of the web’s malicious traffic.😱
-            </li>
-        </ul>
-    </OneSlot>
-
-    <OneSlot
-            title="Malicious Exploits Statistics (2018)">
-        <ul class="list-disc p-4">
-            <li class="leading-normal">
-                PHP accounts for 68% of web's malicious exploits.😬
-            </li>
-        </ul>
-    </OneSlot>
+    <WhySecurity
+            title="Why PHP Security ?"
+            item1="Powers over 80% of the web 😇"
+            item2="Target of 81% of malicious traffic 😱"
+            item3="Accounts for 68% of malicious exploits 🥵">
+    </WhySecurity>
 
     <Quote
-            avatar="https://londonspeakerbureau.com/wp-content/uploads/2017/04/Martina_Navratilova_Keynote_Speaker-300x300.jpg"
+            avatar=""
             author="Martina Navratilova"
             company="Former Wimbledon Champion"
             quote="Security used to be an inconvenience sometimes, but now it’s a necessity all the time.">
     </Quote>
+
+    <Agenda
+            title="Agenda"
+            item1="Common Security Threats."
+            item2="Prevention Techniques."
+            item3="Code Snippets & Examples (Laravel & PHP)"
+            item4="Security Recommendations (Laravel & PHP)"
+            item5="Question & Answers">
+    </Agenda>
 
     <OneSlot
             title="PHP Security Threats (Top 3)">
@@ -92,7 +95,8 @@
             title="What is Cross-Site Scripting (XSS) 👺 ?">
         <h2 class="leading-normal">
             Cross-site Scripting is a security vulnerability empowers attackers
-            <span class="uppercase text-red-400 font-bold">inject and execute malicious code</span> into a web application to control and steal user's information.
+            <span class="uppercase text-red-400 font-bold">inject and execute malicious code</span> into a web
+            application to control and steal user's information.
         </h2>
     </OneSlot>
 
@@ -114,7 +118,8 @@
             title="Cross-Site Request Forgery (CSRF) 🤡 ?">
         <h2 class="leading-normal">
             Cross-site request forgery is a security vulnerability empowers attackers to
-            <span class="uppercase text-red-400 font-bold">perform unauthorised commands</span> on behalf of an authenticated web application user.
+            <span class="uppercase text-red-400 font-bold">perform unauthorised commands</span> on behalf of an
+            authenticated web application user.
         </h2>
     </OneSlot>
 
@@ -131,7 +136,6 @@
     </OneSlot>
 
     <CrossSiteRequestForgryExample/>
-
 
     <Slide animate>
         <div class="text-left space-y-6">
